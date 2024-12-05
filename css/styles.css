@@ -24,7 +24,11 @@ button {
 
 .img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
+
+
 
 /* #region header */
 
@@ -44,7 +48,8 @@ button {
     padding-right: 16px;
     margin: 0 auto;
     width: 1158px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-page .container {
@@ -90,6 +95,7 @@ display: flex;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .nav-item-link:hover,
@@ -100,6 +106,8 @@ display: flex;
 
 .header-addr {
     font-style: normal;
+    display: none;
+    align-items: center;
 }
 
 .addr-list {
@@ -119,9 +127,6 @@ display: flex;
 .addr-link:focus {
     color: #404bbf;
 }
-
-
-
 
 /* #endregion header */
 
@@ -167,6 +172,19 @@ display: flex;
 
 /* #region section */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
 .second-section {
     padding: 120px 0;
 }
@@ -178,7 +196,7 @@ display: flex;
 }
 
 .second-section-list-item {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .third-title {
