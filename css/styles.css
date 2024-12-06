@@ -221,7 +221,7 @@ display: flex;
     margin-bottom: 8px;
 }
 
-.visually-hidden .container {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
